@@ -17,8 +17,15 @@ npm run start
 Pour reprendre la terminologie Redux:
 * Les composants dans components/smarts sont des smarts components
 * Les composents dans components/dumbs sont des dumbs components
+* les dumbs components ne font que de l'affichage
+* les smarts gerent l'acces aux données et la logique applicative
 
+Quelques fonctionnalités UX pour améliorer l'ergonomie:
+* infinite scroll pour l'affichage des produits
+* header qui s'auto hide quand on scroll
 
-Il y a un infinite scroll pour l'affichage des produits
-Les deux composants smarts "List" et "Details" ont pour role de récuperer les données puis délèguent l'affichage. 
-Ces deux composants sont génériques, indépendant des ressources a afficher.
+Au niveau des libs utilisé
+* pour la gestion des layouts j'ai utilisé tailwindcss
+* pour quelques autres composants, antd
+* react-query pour lire les données
+
